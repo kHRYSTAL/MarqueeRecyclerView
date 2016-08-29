@@ -2,6 +2,7 @@
 
 #### screenshot
 
+![](https://github.com/kHRYSTAL/MarqueeRecyclerView/blob/master/screenshot.gif)
 
 #### usage
  
