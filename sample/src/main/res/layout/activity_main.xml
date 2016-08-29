@@ -8,16 +8,9 @@
     <me.khrystal.marqueerecyclerview.MarqueeRecyclerView
         android:id="@+id/marquee_1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content" />
     <me.khrystal.marqueerecyclerview.MarqueeRecyclerView
         android:id="@+id/marquee_2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-    <me.khrystal.marqueerecyclerview.MarqueeRecyclerView
-        android:id="@+id/marquee_3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content" />
 </LinearLayout>

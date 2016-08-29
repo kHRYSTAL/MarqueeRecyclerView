@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * update time:
  * email: 723526676@qq.com
  */
-public class MarqueeRecyclerView extends RecyclerView{
+public class MarqueeRecyclerView extends RecyclerView {
 
     private Thread mThread = null;
     private AtomicBoolean mAtomic = new AtomicBoolean(false);
@@ -64,6 +64,8 @@ public class MarqueeRecyclerView extends RecyclerView{
     }
 
     public void startMarquee() {
+        mAtomic.set(true);
+
         mHandler=new Handler(){
             @Override
             public void handleMessage(Message msg) {
@@ -89,9 +91,7 @@ public class MarqueeRecyclerView extends RecyclerView{
                 }
             };
         }
-
-        if (mThread != null)
-            mThread.start();
+        mThread.start();
     }
 
 
